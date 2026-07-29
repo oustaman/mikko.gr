@@ -1,16 +1,16 @@
 /* mikko.gr — dependency-free. */
 :root{
-  --bg:#fbfaf8; --fg:#141317; --fg-2:#56535d; --fg-3:#8e8a96;
+  --bg:#fbfaf8; --fg:#141317; --fg-2:#56535d; --fg-3:#6b6775;
   --rule:#e6e3dd; --accent:#7d1a37;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#111015;--fg:#f4f2ee;--fg-2:#a9a5b0;--fg-3:#767280;--rule:#292731;--accent:#e08aa1}
+  :root{--bg:#111015;--fg:#f4f2ee;--fg-2:#a9a5b0;--fg-3:#8f8b99;--rule:#292731;--accent:#e08aa1}
 }
-:root[data-theme="dark"]{--bg:#111015;--fg:#f4f2ee;--fg-2:#a9a5b0;--fg-3:#767280;--rule:#292731;--accent:#e08aa1}
-:root[data-theme="light"]{--bg:#fbfaf8;--fg:#141317;--fg-2:#56535d;--fg-3:#8e8a96;--rule:#e6e3dd;--accent:#7d1a37}
+:root[data-theme="dark"]{--bg:#111015;--fg:#f4f2ee;--fg-2:#a9a5b0;--fg-3:#8f8b99;--rule:#292731;--accent:#e08aa1}
+:root[data-theme="light"]{--bg:#fbfaf8;--fg:#141317;--fg-2:#56535d;--fg-3:#6b6775;--rule:#e6e3dd;--accent:#7d1a37}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -31,7 +31,7 @@ h1{font-family:var(--serif);font-weight:400;letter-spacing:-.022em;line-height:1
 h1.wide{max-width:20ch}
 p{margin:0 0 1.5rem;color:var(--fg-2);max-width:58ch;font-size:1.05rem}
 p.state{color:var(--fg);font-size:1.2rem;line-height:1.55;max-width:52ch}
-a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--rule)}
+a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--fg-3)}
 a:hover{border-bottom-color:var(--accent)}
 em{font-style:italic}
 .eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;
@@ -57,3 +57,10 @@ footer.site .wrap{color:var(--fg-3);font-size:.9rem}
 footer.site a{color:var(--fg-2);border-bottom-color:var(--rule)}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.6rem 1rem;z-index:99}
+
+h2{font-family:var(--serif);font-weight:400;font-size:1.35rem;letter-spacing:-.01em;
+  margin:4rem 0 0;color:var(--fg)}
+h2 + ul.bare{margin-top:1.25rem}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
