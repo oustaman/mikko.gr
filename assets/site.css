@@ -64,3 +64,19 @@ h2 + ul.bare{margin-top:1.25rem}
 
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* case study */
+.meta{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--fg-3);
+  margin:0 0 3rem;line-height:1.9}
+.scroll-x{overflow-x:auto;margin:2.5rem 0}
+table.cmp{width:100%;border-collapse:collapse;font-size:.95rem;min-width:420px}
+table.cmp th{text-align:left;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--fg-3);font-weight:400;padding:0 1rem .7rem 0;
+  border-bottom:1px solid var(--fg-3)}
+table.cmp td{padding:.75rem 1rem .75rem 0;border-bottom:1px solid var(--rule);color:var(--fg-2)}
+table.cmp td:first-child{color:var(--fg)}
+table.cmp td+td,table.cmp th+th{text-align:right;width:1%;white-space:nowrap;font-variant-numeric:tabular-nums}
+blockquote{margin:3rem 0;padding-left:1.5rem;border-left:2px solid var(--accent);
+  font-family:var(--serif);font-size:1.35rem;line-height:1.4;color:var(--fg);max-width:44ch}
+blockquote p{color:inherit;margin:0;max-width:none;font-size:inherit}
+.talk{margin-top:5rem;padding-top:2.5rem;border-top:1px solid var(--fg-3)}
