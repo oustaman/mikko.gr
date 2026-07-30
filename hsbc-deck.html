@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One bank, two arguments — executive briefing</title>
+<meta name="description" content="HSBC UK and Hong Kong: eight slides on why information architecture does not cross borders.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--bg:#fbfaf8;--fg:#141317;--fg-2:#56535d;--fg-3:#6b6775;--rule:#e6e3dd;--accent:#7d1a37;
+ --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+ --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#111015;--fg:#f4f2ee;--fg-2:#a9a5b0;--fg-3:#8f8b99;--rule:#292731;--accent:#e08aa1}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:17px;line-height:1.6}
+.deck{min-height:100vh;display:flex;flex-direction:column}
+.slide{flex:1;display:none;align-items:center;padding:clamp(3rem,8vw,6rem) clamp(1.5rem,6vw,4rem) 6rem}
+.slide.on{display:flex}
+.inner{max-width:840px;margin:0 auto;width:100%}
+.num{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-3);margin-bottom:2rem}
+h1{font-family:var(--serif);font-weight:400;letter-spacing:-.022em;line-height:1.06;
+ font-size:clamp(2.2rem,6.5vw,4rem);margin:0 0 1.5rem}
+h2{font-family:var(--serif);font-weight:400;letter-spacing:-.018em;line-height:1.12;
+ font-size:clamp(1.7rem,4.4vw,2.7rem);margin:0 0 1.75rem}
+p{color:var(--fg-2);max-width:56ch;font-size:clamp(1rem,1.7vw,1.2rem);margin:0 0 1.1rem}
+p.big{color:var(--fg);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.45;max-width:44ch}
+em{font-style:italic}strong{color:var(--fg);font-weight:600}
+table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:clamp(.95rem,1.6vw,1.15rem)}
+th{text-align:left;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+ color:var(--fg-3);font-weight:400;padding:0 1rem .7rem 0;border-bottom:1px solid var(--fg-3)}
+td{padding:.7rem 1rem .7rem 0;border-bottom:1px solid var(--rule);color:var(--fg-2)}
+td:first-child{color:var(--fg)}
+td+td,th+th{text-align:right;width:1%;white-space:nowrap;font-variant-numeric:tabular-nums}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2.5rem;margin-top:2rem}
+.two h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--accent);margin:0 0 .9rem;font-weight:400}
+.two ul{margin:0;padding-left:1.1rem;color:var(--fg-2)}
+.two li{margin-bottom:.4rem}
+ul.claims{list-style:none;padding:0;margin:2rem 0 0}
+ul.claims li{padding:1rem 0;border-bottom:1px solid var(--rule);color:var(--fg-2)}
+ul.claims b{color:var(--fg);font-weight:600;display:block;font-family:var(--serif);font-size:1.2rem}
+.meta{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;color:var(--fg-3);line-height:1.9;margin-top:2.5rem}
+nav.bar{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;gap:1rem;
+ padding:.9rem clamp(1.5rem,6vw,4rem);border-top:1px solid var(--rule);
+ background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+nav.bar button{font:inherit;font-size:.85rem;background:none;border:1px solid var(--rule);
+ color:var(--fg-2);padding:.35rem .8rem;border-radius:3px;cursor:pointer}
+nav.bar button:hover{border-color:var(--accent);color:var(--fg)}
+nav.bar button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.count{font-family:var(--mono);font-size:.72rem;color:var(--fg-3);margin-left:auto}
+a{color:var(--fg);border-bottom:1px solid var(--fg-3);text-decoration:none}
+</style></head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide on"><div class="inner">
+<p class="num">Executive briefing · Market entry</p>
+<h1>One bank.<br>Two arguments.</h1>
+<p class="big">HSBC runs six top-level categories in the United Kingdom and six in Hong Kong.
+Four are identical. The other two reveal two completely different theories of what a customer is.</p>
+<p class="meta">Independent analysis · not commissioned by HSBC<br>
+Public retail websites, as observed July 2026<br>
+Mike Oustamanolakis · mikko.gr</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">01 · The surface</p>
+<h2>Identical at the top.<br>Not underneath.</h2>
+<table>
+<tr><th>Measure</th><th>UK</th><th>Hong&nbsp;Kong</th></tr>
+<tr><td>Top-level categories</td><td>6</td><td>6</td></tr>
+<tr><td>Navigable links</td><td>~155</td><td>~190</td></tr>
+<tr><td>Investing sub-sections</td><td>4</td><td>8</td></tr>
+<tr><td>Dedicated apps in navigation</td><td>1</td><td>5</td></tr>
+</table>
+<p>Investing occupies 11% of UK navigation space against 17% in Hong Kong — a 55% relative increase.</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">02 · The finding</p>
+<h2>Four slots are fixed.<br>Two are a choice.</h2>
+<p>Banking, borrowing, investing and insurance are set by the business. The remaining two are
+discretionary — and the choice is the result.</p>
+<div class="two">
+<div><h3>United Kingdom — 26%</h3><ul>
+<li>Wellbeing</li><li>Help</li></ul>
+<p style="font-size:1rem;margin-top:.9rem">Welfare and utility</p></div>
+<div><h3>Hong Kong — 19%</h3><ul>
+<li>Insights</li><li>Offers</li></ul>
+<p style="font-size:1rem;margin-top:.9rem">Market intelligence and commercial opportunity</p></div>
+</div>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">03 · The absence</p>
+<h2>What isn't there<br>says more.</h2>
+<div class="two">
+<div><h3>Under UK Wellbeing</h3><ul>
+<li>Bereavement support</li><li>Losing your job</li><li>Mental health</li>
+<li>Financial and domestic abuse</li><li>Support for gambling</li></ul></div>
+<div><h3>Under HK Insights</h3><ul>
+<li>Fund and bond screeners</li><li>FX outlooks</li><li>House views</li>
+<li>ESG analysis</li><li>Stock quotes</li></ul></div>
+</div>
+<p class="big" style="margin-top:2.5rem">There is no equivalent of bereavement support, job loss or
+mental health anywhere in the Hong Kong navigation. Not buried — absent.</p>
+<p>And the UK has no stock screener, no IPOs, no warrants, no live market data.</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">04 · Reading the structure</p>
+<h2>Every slot is a claim<br>about who you serve.</h2>
+<ul class="claims">
+<li><b>Wellbeing at top level</b>Users in difficulty are a primary case, not an edge case.</li>
+<li><b>Insights at top level</b>Users consume market intelligence routinely and expect direct access.</li>
+<li><b>Offers at top level</b>Users are motivated by incentive and go looking for it.</li>
+<li><b>Five apps, not one</b>Financial life is modular, and too varied for a single door.</li>
+</ul>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">05 · The correction</p>
+<h2>Neither one<br>is a mistake.</h2>
+<p class="big">The UK structure is consistent with a regulatory environment that treats consumer
+protection as a duty. The Hong Kong structure is consistent with mass-market equity participation,
+where investing is an everyday behaviour rather than a specialist product.</p>
+<p>Both are correct for the market they were grown in. The error is never the structure —
+it is moving one structure to a market it was not grown for.</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">06 · The implication</p>
+<h2>Information architecture<br>is not portable.</h2>
+<p class="big">A navigation label is a promise. When it breaks, the user leaves — not because
+the content is missing, but because the path was built for someone else.</p>
+<p>A company expanding across markets that ships its home structure unchanged is making a claim
+about its new customers it has never checked. This is why a product that performs at home can fail
+abroad without a single line of content being wrong.</p>
+<p>The Hong Kong arrangement also carries a cost the UK's does not: a customer must know which
+<em>category</em> their app belongs to before they can find it. That assumes a product literacy the
+UK design never asks for.</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">07 · Next</p>
+<h2>The same reconstruction,<br>run against your navigation.</h2>
+<p class="big">A 45-minute session for boards, product and design teams: the analysis, the method
+behind it, and what the same count reveals about your own structure.</p>
+<p><a href="mailto:mike@mikko.gr">mike@mikko.gr</a> &nbsp;·&nbsp; <a href="https://mikko.gr/hsbc">mikko.gr/hsbc</a></p>
+<p class="meta">A longer treatment appears as a chapter in <em>Compression vs Clarity</em>, Naisu Press.<br>
+Frameworks: Pirolli &amp; Card, information foraging · Norman, mental models</p>
+</div></section>
+
+</div>
+<nav class="bar">
+<button id="prev" aria-label="Previous slide">← Prev</button>
+<button id="next" aria-label="Next slide">Next →</button>
+<span class="count" id="count" aria-live="polite">1 / 8</span>
+</nav>
+<script>
+const s=[...document.querySelectorAll('.slide')];let i=0;
+const show=n=>{i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('on',k===i));
+ document.getElementById('count').textContent=(i+1)+' / '+s.length;
+ document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===s.length-1;
+ history.replaceState(null,'','#'+(i+1));window.scrollTo(0,0);};
+document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('prev').onclick=()=>show(i-1);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')show(i+1);
+ if(e.key==='ArrowLeft')show(i-1);if(e.key==='Home')show(0);if(e.key==='End')show(s.length-1);});
+show(location.hash?parseInt(location.hash.slice(1))-1||0:0);
+</script>
+</body></html>
