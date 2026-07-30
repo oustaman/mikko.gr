@@ -50,6 +50,21 @@ nav.bar button:hover{border-color:var(--accent);color:var(--fg)}
 nav.bar button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .count{font-family:var(--mono);font-size:.72rem;color:var(--fg-3);margin-left:auto}
 a{color:var(--fg);border-bottom:1px solid var(--fg-3);text-decoration:none}
+
+.seg{stroke-width:0}.ctx{fill:#948e86}.d1{fill:#7d1a37}.d2{fill:#c2687e}
+.pct{font-family:var(--sans);font-size:14px;text-anchor:middle;font-weight:500}
+.on-ctx,.on-d2{fill:#141317}.on-d1{fill:#fbfaf8}
+.rowlab{font-family:var(--mono);font-size:11px;fill:var(--fg-3);letter-spacing:.08em;text-transform:uppercase}
+.dlabel{font-family:var(--sans);font-size:13px;text-anchor:middle;fill:var(--fg);font-weight:600}
+.key{font-size:.9rem;color:var(--fg-2);display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;margin-top:1.2rem}
+.sw{width:13px;height:13px;border-radius:2px;display:inline-block;margin-right:.4rem}
+.sw.ctx{background:#948e86}.sw.d1{background:#7d1a37}.sw.d2{background:#c2687e;margin-left:-.15rem}
+nav.bar .exit{margin-right:.25rem;border:0;color:var(--fg-3);font-size:.85rem;text-decoration:none;
+ border-bottom:1px solid var(--rule);padding-bottom:1px}
+nav.bar .exit:hover{color:var(--accent)}
+@media (prefers-color-scheme:dark){.ctx{fill:#8a857b}.d1{fill:#e08aa1}.d2{fill:#a84d66}
+ .on-ctx,.on-d1{fill:#141317}.on-d2{fill:#f4f2ee}
+ .sw.ctx{background:#8a857b}.sw.d1{background:#e08aa1}.sw.d2{background:#a84d66}}
 </style></head>
 <body>
 <div class="deck" id="deck">
@@ -78,7 +93,22 @@ Mike Oustamanolakis · mikko.gr</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">02 · The finding</p>
+<p class="num">02 · The allocation</p>
+<h2>Where each market<br>spends its navigation.</h2>
+<svg viewBox="0 0 700 260" role="img" aria-labelledby="dt dd" style="width:100%;height:auto;margin:1.5rem 0 0">
+<title id="dt">Navigation space by category, HSBC UK and Hong Kong</title>
+<desc id="dd">UK gives 26 per cent of navigation to Wellbeing and Help; Hong Kong gives 19 per cent to Insights and Offers.</desc>
+<text class="rowlab" x="8" y="30">United Kingdom &#183; ~155 links</text>
+<g><title>Banking: 21%</title><rect class="seg ctx" x="8.0" y="40" width="141.6" height="52" rx="3"/><text class="pct on-ctx" x="78.8" y="71.0">21%</text></g><g><title>Borrowing: 23%</title><rect class="seg ctx" x="151.6" y="40" width="155.3" height="52" rx="3"/><text class="pct on-ctx" x="229.3" y="71.0">23%</text></g><g><title>Investing: 11%</title><rect class="seg ctx" x="309.0" y="40" width="73.2" height="52" rx="3"/><text class="pct on-ctx" x="345.6" y="71.0">11%</text></g><g><title>Insurance: 19%</title><rect class="seg ctx" x="384.2" y="40" width="128.0" height="52" rx="3"/><text class="pct on-ctx" x="448.2" y="71.0">19%</text></g><g><title>Wellbeing: 16%</title><rect class="seg d1" x="514.2" y="40" width="107.4" height="52" rx="3"/><text class="pct on-d1" x="567.9" y="71.0">16%</text></g><text class="dlabel" x="567.9" y="30">Wellbeing</text><g><title>Help: 10%</title><rect class="seg d2" x="623.6" y="40" width="66.4" height="52" rx="3"/><text class="pct on-d2" x="656.8" y="71.0">10%</text></g><text class="dlabel" x="656.8" y="30">Help</text>
+<text class="rowlab" x="8" y="160">Hong Kong &#183; ~190 links</text>
+<g><title>Banking: 26%</title><rect class="seg ctx" x="8.0" y="170" width="175.8" height="52" rx="3"/><text class="pct on-ctx" x="95.9" y="201.0">26%</text></g><g><title>Borrowing: 24%</title><rect class="seg ctx" x="185.8" y="170" width="162.2" height="52" rx="3"/><text class="pct on-ctx" x="266.9" y="201.0">24%</text></g><g><title>Investing: 17%</title><rect class="seg ctx" x="350.0" y="170" width="114.3" height="52" rx="3"/><text class="pct on-ctx" x="407.1" y="201.0">17%</text></g><g><title>Insurance: 14%</title><rect class="seg ctx" x="466.3" y="170" width="93.8" height="52" rx="3"/><text class="pct on-ctx" x="513.2" y="201.0">14%</text></g><g><title>Insights: 7%</title><rect class="seg d1" x="562.0" y="170" width="45.9" height="52" rx="3"/><text class="pct on-d1" x="585.0" y="201.0">7%</text></g><text class="dlabel" x="585.0" y="160">Insights</text><g><title>Offers: 12%</title><rect class="seg d2" x="609.9" y="170" width="80.1" height="52" rx="3"/><text class="pct on-d2" x="650.0" y="201.0">12%</text></g><text class="dlabel" x="650.0" y="160">Offers</text>
+</svg>
+<p class="key"><span class="sw ctx"></span> Fixed by the business &nbsp;
+<span class="sw d1"></span><span class="sw d2"></span> Discretionary</p>
+</div></section>
+
+<section class="slide"><div class="inner">
+<p class="num">03 · The finding</p>
 <h2>Four slots are fixed.<br>Two are a choice.</h2>
 <p>Banking, borrowing, investing and insurance are set by the business. The remaining two are
 discretionary — and the choice is the result.</p>
@@ -93,7 +123,7 @@ discretionary — and the choice is the result.</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">03 · The absence</p>
+<p class="num">04 · The absence</p>
 <h2>What isn't there<br>says more.</h2>
 <div class="two">
 <div><h3>Under UK Wellbeing</h3><ul>
@@ -109,7 +139,7 @@ mental health anywhere in the Hong Kong navigation. Not buried — absent.</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">04 · Reading the structure</p>
+<p class="num">05 · Reading the structure</p>
 <h2>Every slot is a claim<br>about who you serve.</h2>
 <ul class="claims">
 <li><b>Wellbeing at top level</b>Users in difficulty are a primary case, not an edge case.</li>
@@ -120,7 +150,7 @@ mental health anywhere in the Hong Kong navigation. Not buried — absent.</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">05 · The correction</p>
+<p class="num">06 · The correction</p>
 <h2>Neither one<br>is a mistake.</h2>
 <p class="big">The UK structure is consistent with a regulatory environment that treats consumer
 protection as a duty. The Hong Kong structure is consistent with mass-market equity participation,
@@ -130,7 +160,7 @@ it is moving one structure to a market it was not grown for.</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">06 · The implication</p>
+<p class="num">07 · The implication</p>
 <h2>Information architecture<br>is not portable.</h2>
 <p class="big">A navigation label is a promise. When it breaks, the user leaves — not because
 the content is missing, but because the path was built for someone else.</p>
@@ -143,7 +173,7 @@ UK design never asks for.</p>
 </div></section>
 
 <section class="slide"><div class="inner">
-<p class="num">07 · Next</p>
+<p class="num">08 · Next</p>
 <h2>The same reconstruction,<br>run against your navigation.</h2>
 <p class="big">A 45-minute session for boards, product and design teams: the analysis, the method
 behind it, and what the same count reveals about your own structure.</p>
@@ -154,6 +184,7 @@ Frameworks: Pirolli &amp; Card, information foraging · Norman, mental models</p
 
 </div>
 <nav class="bar">
+<a class="exit" href="/hsbc">&larr; Read as an article</a>
 <button id="prev" aria-label="Previous slide">← Prev</button>
 <button id="next" aria-label="Next slide">Next →</button>
 <span class="count" id="count" aria-live="polite">1 / 8</span>
@@ -167,7 +198,7 @@ const show=n=>{i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classLi
 document.getElementById('next').onclick=()=>show(i+1);
 document.getElementById('prev').onclick=()=>show(i-1);
 addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')show(i+1);
- if(e.key==='ArrowLeft')show(i-1);if(e.key==='Home')show(0);if(e.key==='End')show(s.length-1);});
+ if(e.key==='ArrowLeft')show(i-1);if(e.key==='Home')show(0);if(e.key==='Escape')location.href='/hsbc';if(e.key==='End')show(s.length-1);});
 show(location.hash?parseInt(location.hash.slice(1))-1||0:0);
 </script>
 </body></html>
