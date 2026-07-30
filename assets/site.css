@@ -97,4 +97,17 @@ a.card:hover .name{color:var(--accent)}
 .card.soon .desc{color:var(--fg-3)}
 .card.soon .tag{color:var(--accent)}
 .groupname{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--fg-3);margin:4rem 0 -2.5rem}
+  color:var(--fg-3);margin:3.5rem 0 .9rem}
+.grid{margin-top:0}
+
+/* footer identity */
+footer.site .wrap{display:flex;align-items:flex-start;gap:1.5rem;flex-wrap:wrap}
+.fid{display:flex;align-items:center;gap:1rem;flex:1;min-width:260px}
+.fid img{width:64px;height:64px;border-radius:50%;flex-shrink:0}
+.fid .who{font-family:var(--serif);font-size:1.05rem;color:var(--fg);display:block;margin-bottom:.15rem}
+.fid p{margin:0;font-size:.88rem;color:var(--fg-3);max-width:38ch}
+.social{display:flex;gap:1rem;align-items:center;margin-left:auto;padding-top:.5rem}
+.social a{border:0;display:inline-flex;color:var(--fg-3)}
+.social a:hover{color:var(--accent)}
+.social svg{width:20px;height:20px;fill:currentColor;display:block}
+.social a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
